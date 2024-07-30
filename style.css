@@ -1,0 +1,701 @@
+/* apply tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* define body of web page */
+body {
+    /* background-color: rgb(#3c3b3b00, green, black); */
+    background-color: black;
+}
+
+/* navigation link for define nav items  */
+
+nav {
+    display: flex;
+    justify-content: center;
+    border: 10px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: black;
+
+
+
+}
+
+/* toggle button for dark-light mode  */
+.dark {
+    margin-left: 300px;
+}
+
+/* when hover a nav */
+
+nav:hover {
+    border: solid white 2px;
+    /* box-shadow: 5px 5px 5px 5px; */
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+
+}
+
+/* in span elements define padding from left  */
+/*  */
+span {
+    padding-left: 40px;
+    /* border: 10px solid wheat; */
+    /* margin-left: 20px; */
+
+}
+
+/* grow 3rd elemnts in display flex of span */
+span:nth-of-type(4) {
+    flex-grow: 3;
+
+}
+
+/* header have display flex and items in flex direction are in y axis */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    height: 600px;
+    color: white;
+    background-color: black;
+}
+
+.header:hover {
+    border: white solid 2px;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+
+/* in button class are used to download the cv*/
+/*  it is a button */
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+/*  about me section have flex direction row x axis */
+.aboutme {
+    display: flex;
+    border-radius: 30px;
+    /* flex-wrap: wrap; */
+
+    /* border: black solid 10px; */
+    padding: 20px;
+    height: 600px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    /* border: solid blue 10px; */
+
+
+
+}
+
+.aboutme:hover {
+    border: solid white 2px;
+    box-shadow: 5px 5px 5px 5px;
+
+}
+
+/* image in about me section */
+.imgbox1 {
+    position: relative;
+    /* img{ */
+    animation-name: image;
+    animation: image 1s infinite alternate;
+    height: 90px;
+
+
+
+}
+
+@keyframes image {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+
+    to {
+        top: 10px;
+    }
+
+}
+
+
+
+
+
+/* there is class in about me section */
+/* have direction y axis column contains only about me heading and para portion  */
+/* for define in column direction */
+.box3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.butoon2 {
+    /* width: 10%; */
+    height: 50px;
+}
+
+/* skills box have two section skills and visual represntion of effiecnt habit */
+
+.skillbox {
+    /* width: 100%; */
+    margin: 10px;
+    border: 10px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.skillbox:hover {
+    border: solid white 2px;
+    box-shadow: 5px 5px 5px 5px;
+
+}
+
+/* skills desc contain two section and flex direction is x or row */
+.skills_desc {
+    display: flex;
+    height: 600px;
+    /* flex-wrap: wrap; */
+}
+
+/* class but is  box have two section both direction is column */
+/* but have tow class seprated use in html */
+.but {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid black 10px;
+    width: 50%;
+    margin: 10px;
+    padding: 10px
+}
+
+.but:hover {
+    /* box-shadow: 10px 10px 10px; */
+    box-shadow: 10px -25px 20px -20px white
+}
+
+/* progrees is a class in skill section */
+/* and used bootstrap in progress section in skill section */
+.progress {
+
+    margin-top: 20px;
+
+}
+
+/* projects details contain service section  */
+/* it is a grid contain rows and columns */
+.services {
+    width: 100%;
+    height: 100%;
+    border: solid black 10px;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    color: white;
+    background-color: black;
+    margin: 10px;
+
+}
+
+
+.services:hover {
+    border: solid white 2px;
+    box-shadow: 5px 5px 5px 5px;
+
+}
+
+#he1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+/* #sb1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 10px solid black; */
+
+/* } */
+.servicebox {
+    /* width: 100%; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 5px;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    padding: 10px;
+    box-shadow: 5px 5px 5px;
+    transition: all 0.5s linear;
+    color: wheat;
+
+
+}
+
+/* servicebox contain individual cards of specfic project and direction row  */
+/* grid row starts and grid row ends in 3 to 4 rows and direction column */
+/* and wrap the items for looks in specific place */
+.servicebox1 {
+    background-color: black;
+    color: wheat;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 5px;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    padding: 10px;
+    box-shadow: 5px 5px 5px;
+    transition: all 0.5s linear;
+
+}
+
+
+#sb1:hover {
+    background-image: url("OIP\ \(2\).jpeg");
+    /* transition: 5 linear ; */
+    box-shadow: 10px 10px 5px;
+
+    /* width: 400px; */
+    /* height: 300px; */
+
+
+}
+
+#sb2:hover {
+    background-image: url("OIP\ \(3\).jpeg");
+    /* transition: 5 linear ; */
+
+    box-shadow: 10px 10px 5px;
+}
+
+#sb3:hover {
+    background-image: url(download\ \(1\).jpeg);
+    box-shadow: 10px 10px 5px;
+    /* height: px; */
+}
+
+/* form section  */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* height: 400px; */
+}
+
+/* is a  box contain form details */
+.contactme {
+    /* display: grid; */
+    border: solid black 10px;
+    padding: 10px;
+    margin: 10px;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+
+}
+
+/* for every span */
+span {
+    margin: 10px;
+    border-radius: 50px;
+
+
+
+}
+
+input {
+    width: 200px;
+    border-radius: 10px;
+    border: 4px solid white;
+}
+
+textarea {
+    height: 300px;
+    width: 50%;
+    border: 4px solid white;
+    border-radius: 10px;
+    /* color: aqua; */
+
+
+}
+
+.aboutgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 600px;
+    border: 10px solid white;
+}
+
+/* it is a image define from about section apply animation */
+#imgbox1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 20px;
+    height: 250px;
+
+    position: relative;
+    animation-name: movement;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+#box3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* run the  animation */
+@keyframes movement {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+
+    to {
+        /* left: 300px; */
+        /* right: 200px; */
+        /* bottom:300px; */
+        top: 10px;
+        /* left: 300px; */
+        /* right: 300px; */
+    }
+
+
+
+}
+
+/* . container class in ui-widgets section  */
+/* of skill section  */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+}
+
+
+
+
+.ui-widgets:nth-child(2) {
+    border-top-color: chartreuse;
+    border-right-color: white;
+    border-left-color: palegreen;
+    border-bottom-color: white;
+}
+
+/*  Apply css properties to ui-widgets class 
+            and ui-values class*/
+
+/*  Apply css properties to ui-widgets 
+            class and ui-labels class*/
+.ui-widgets .ui-labels {
+
+    left: 0;
+    bottom: -16px;
+    text-shadow: 0 0 4px grey;
+    color: blue;
+    font-size: bold;
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
+}
+/* define the progress elements in a circle from  */
+.ui-widgets {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 9rem;
+    margin: 30px;
+    /* margin: 50px; */
+    border: 1.2rem solid palegreen;
+    box-shadow: inset 0 0 7px grey;
+    border-left-color: palegreen;
+    border-top-color: chartreuse;
+    border-right-color: darkgreen;
+    border-bottom-color: white;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ui-widgets .ui-values {
+    top: 40px;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    font-weight: 700;
+    font-size: 2.0rem;
+
+}
+/* certificate section in a grid form   */
+/* have 3 col and 3 rows */
+.certi_sec {
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 3vw;
+
+}
+
+
+
+
+.certi_sec:hover {
+    border: solid white 2px;
+    border-radius: 20px;
+    box-shadow: 10px -25px 20px -20px white
+}
+
+
+.a1 {
+    /* border: 2px solid white; */
+    margin: 2px;
+}
+
+.a1:hover {
+    box-shadow: 10px -50px 20px -20px white;
+    border-radius: 5px;
+
+
+}
+
+#certi_h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* responsive webpage in ipad mini screen */
+
+@media screen and (max-width: 768px) {
+    .ui-widgets .ui-values {
+        /* top: 40px; */
+        position: absolute;
+        left: 10px;
+        right: 0;
+        font-weight: 200;
+        font-size: 1rem;
+
+    }
+
+    .ui-widgets {
+        width: 5rem;
+        height: 2rem;
+
+    }
+
+    .ui-widgets .ui-labels {
+
+        /* left: 0; */
+        /* bottom: -16px; */
+        text-shadow: 0 0 4px grey;
+        color: black;
+        position: absolute;
+        /* width: 100%; */
+        font-size: 16px;
+
+    }
+
+    .services {
+        /* text-overflow:hidden ; */
+        /* overflow: hidden; */
+        grid-template-rows: auto auto;
+        row-gap: 3vw;
+        /* display: grid; */
+    }
+
+
+
+
+
+
+}
+
+.span1 {
+    /* background-color: white; */
+    width: 200px;
+    /* margin: 30px; */
+    /* padding:10px ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    margin: 5px;
+}
+
+
+.contactme {
+    /* background-color: gray; */
+    /* border: 10px solid white; */
+    border-radius: 10px;
+}
+
+.buton4 {
+    font-size: large;
+    font-weight: bolder;
+    border: 3px solid wheat;
+    margin: 10px;
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+}
+
+.contactme:hover {
+    border: 10px solid white;
+    box-shadow: 10px -30px 20px -20px white;
+    border-radius: 20px;
+
+
+}
+
+
+footer {
+    /* background-color: white; */
+    /* border: 10px solid gray; */
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+footer:hover {
+    border: 10px solid white;
+    box-shadow: 10px -30px 20px -20px white;
+    /* border-radius: 5px; */
+
+
+}
+
+/* responsive webpage in s8+ ultra  */
+
+@media screen and (max-width: 360px) {
+
+    /* body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5;
+    } */
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        /* font-size: small; */
+        /* grid-column-start: 1; */
+        /* grid-column-end: 2; */
+
+        flex-wrap: wrap;
+    }
+
+    .skillbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contactme {
+        /* display: flex; */
+        overflow: hidden;
+
+
+    }
+
+    .helo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* grid-row-start: 4; */
+        /* grid-row-end:5 ; */
+    }
+
+    footer {
+        display: flex;
+        width: 100%;
+    }
+
+
+}
+
+.bounce {
+    height: 2000px;
+    border: 10px solid wheat;
+}
